@@ -1,31 +1,39 @@
 import Button from "../js/button.js";
 
 
-export class Partido extends Phaser.Scene {
+
+
+export class ResultadoFinal extends Phaser.Scene {
   constructor() {
-    
-    super("Partido");
+    super("ResultadoFinal");
   }
 
+ 
+
   create() {
-    
+   
     this.add
       .image(
         this.cameras.main.centerX,
         this.cameras.main.centerY,
-        "partido"
+        "resultado_final"
       )
+    
 
     const boton = new Button(
       this.cameras.main.centerX,
       this.cameras.main.centerY + this.cameras.main.centerY / 2,
-      "Siguiente",
+      "Menu Principal",
       this,
       () => {
         
-        this.scene.start("ResultadoFinal");
+        this.scene.start("MainMenu");
       }
     );
 
-    }
+
+
+
+
+  }
 }

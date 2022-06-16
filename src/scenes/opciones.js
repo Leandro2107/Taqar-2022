@@ -3,27 +3,25 @@ import Button from "../js/button.js";
 
 
 
-export class Grilla extends Phaser.Scene {
+export class Opciones extends Phaser.Scene {
   constructor() {
-    super("Grilla");
+    super("Opciones");
   }
 
- 
-
   create() {
-   
+
     this.add
       .image(
         this.cameras.main.centerX,
         this.cameras.main.centerY,
-        "grilla"
+        "opciones"
       )
-    
+   
 
-    const boton2 = new Button(
+    const boton = new Button(
       this.cameras.main.centerX,
-      this.cameras.main.centerY + this.cameras.main.centerY / 2,
-      "Menu Principal",
+      this.cameras.main.centerY + this.cameras.main.centerY / 3,
+      "Volver",
       this,
       () => {
         
@@ -34,6 +32,8 @@ export class Grilla extends Phaser.Scene {
 
 
 
-
   }
+
+
 }
+
