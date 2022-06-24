@@ -3,7 +3,7 @@ import {MainMenu} from '../scenes/mainmenu.js'
 import {Partido} from '../scenes/partido.js'
 import {ResultadoFinal} from '../scenes/resultadofinal.js'
 import { Opciones } from '../scenes/opciones.js'
-import { SeleccionEquipos } from '../scenes/seleccionequipo.js'
+
 
 var config = {
     type: Phaser.AUTO,
@@ -28,7 +28,7 @@ var config = {
             debug: false
         }
     },
-    scene: [Preloads, MainMenu, Partido, ResultadoFinal, Opciones, SeleccionEquipos] 
+    scene: [Preloads, MainMenu, Partido, ResultadoFinal, Opciones, ] 
                                              
 };
 
