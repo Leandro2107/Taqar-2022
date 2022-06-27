@@ -21,8 +21,7 @@ export class ResultadoFinal extends Phaser.Scene {
     
 
     const boton = new Button(
-      this.cameras.main.centerX,
-      this.cameras.main.centerY + this.cameras.main.centerY / 2,
+      this.cameras.main.centerX + this.cameras.main.centerX/1.50, this.cameras.main.centerY + this.cameras.main.centerY/1.10,
       "Menu Principal",
       this,
       () => {
