@@ -3,20 +3,22 @@ import Button from "../js/button.js";
 
 
 
-export class Opciones extends Phaser.Scene {
+export class Creditos extends Phaser.Scene {
   constructor() {
-    super("Opciones");
+    super("Creditos");
   }
 
-  create() {
+ 
 
+  create() {
+   
     this.add
       .image(
         this.cameras.main.centerX,
         this.cameras.main.centerY,
-        "opciones"
+        "creditos"
       )
-   
+    
 
       this.add.image(this.cameras.main.centerX/3.50, this.cameras.main.centerY + this.cameras.main.centerY/1.12, 'volver').setInteractive().on("pointerdown",
       ()=>this.scene.start("MainMenu", 
@@ -26,8 +28,6 @@ export class Opciones extends Phaser.Scene {
 
 
 
+
   }
-
-
 }
-

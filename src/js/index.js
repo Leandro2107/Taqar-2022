@@ -3,6 +3,8 @@ import {MainMenu} from '../scenes/mainmenu.js'
 import {Partido} from '../scenes/partido.js'
 import {ResultadoFinal} from '../scenes/resultadofinal.js'
 import { Opciones } from '../scenes/opciones.js'
+import { ResultadoFinal2 } from '../scenes/resultadofinal2.js'
+import { Creditos } from '../scenes/creditos.js'
 
 
 var config = {
@@ -29,7 +31,7 @@ var config = {
             debug: false
         }
     },
-    scene: [Preloads, MainMenu, Partido, ResultadoFinal, Opciones, ] 
+    scene: [Preloads, MainMenu, Partido, ResultadoFinal, Opciones, ResultadoFinal2, Creditos ] 
                                              
 };
 
